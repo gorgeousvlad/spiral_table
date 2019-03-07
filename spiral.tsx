@@ -25,7 +25,6 @@ function getMatrix(x: number, y: number) {
     matrix[curX][curY] = getValue(value, 1 , i);
     const tempX = curX + dX;
     const tempY = curY + dY;
-    console.log(curX,curY, i)
     if((tempX >= 0 && tempX < x) && (tempY >= 0 && tempY < y) && !Boolean(matrix[tempX][tempY])) {
         curX = tempX;
         curY = tempY;
